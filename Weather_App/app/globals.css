@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.items {
+  display : flex;
+  flex-direction: column;
+  text-align: center;
+  letter-spacing: 8px;
+  width: 30%;
+  justify-content: center;
+  height: 120px;
+  margin-left: 10px;
+}
+
+.container {
+  margin-top: 17%;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+button {
+  margin-left: 55%;
+  border-radius: 10px;
+}
+
+.bg-clouds,.bg-clear {
+  background-image: url("clouds.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-thunderstorm {
+  background-image: url("thunderstorm.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-drizzle {
+  background-image: url("drizzle.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-rain {
+  background-image: url("rain.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-snow {
+  background-image: url("snow.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-fog {
+  background-image: url("fog.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
