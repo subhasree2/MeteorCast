@@ -7,7 +7,7 @@ export default function Home() {
   const [Details, setDetails] = useState();
   const [backgroundClass, setBackgroundClass] = useState("");
   const [CurrDate, setCurrDate] = useState(() => new Date().toString());
-  const APIKey = "d4654bf477bd63e72d28b3507fe75f50";
+  const APIKey = "YourAPIKEY";
 
   const fetchWeatherData = () => {
     Axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIKey}`)
